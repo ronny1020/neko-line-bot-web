@@ -3,24 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
     "serve": "vue-cli-service serve",
-    "test:unit": "vue-cli-service test:unit"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.3.7",
+    "@apollo/client": "^3.3.8",
+    "@vue/apollo-composable": "^4.0.0-alpha.12",
+    "@vue/apollo-option": "^4.0.0-alpha.11",
     "apollo-boost": "^0.4.9",
     "core-js": "^3.6.5",
-    "graphql": "^15.4.0",
-    "graphql-tag": "^2.11.0",
-    "vue": "^3.0.0",
+    "graphql": "^15.5.0",
+    "vue": "3.0.5",
     "vue-apollo": "^3.0.5",
     "vue-router": "^4.0.0-0"
   },
@@ -46,7 +41,7 @@
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
     "sass": "^1.26.5",
-    "sass-loader": "^10.1.1",
+    "sass-loader": "^11.0.0",
     "typescript": "~4.1.3",
     "vue-cli-plugin-apollo": "~0.22.2",
     "vue-jest": "^5.0.0-0",
@@ -54,5 +49,11 @@
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue,ts,tsx}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   }
 }
