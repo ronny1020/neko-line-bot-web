@@ -12,6 +12,7 @@ createApp({
   setup() {
     provide(DefaultApolloClient, apolloClient)
   },
+
   render() {
     return h(App)
   },
