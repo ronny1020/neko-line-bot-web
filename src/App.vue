@@ -1,7 +1,13 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link>|
-    <router-link to="/meme">Meme</router-link>
+    <ul class="nav">
+      <li class="nav-item">
+        <router-link to="/" class="nav-link">Home</router-link>
+      </li>
+      <li class="nav-item">
+        <router-link to="/meme" class="nav-link">Meme</router-link>
+      </li>
+    </ul>
   </div>
   <router-view />
 </template>

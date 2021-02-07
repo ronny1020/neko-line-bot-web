@@ -1,6 +1,8 @@
 <template>
-  <div>Welcome to Meme</div>
-  <div>{{ resultJson }}</div>
+  <div class="container">
+    <div>Welcome to Meme</div>
+    <div>{{ resultJson }}</div>
+  </div>
 </template>
 
 <script lang="ts">
