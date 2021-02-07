@@ -7,25 +7,26 @@
     </div>
     <div v-else class="row row-cols-1 row-cols-md-4 g-4">
       <div v-for="meme of memes" :key="meme.id" class="col">
-        <div class="card">
+        <div class="card h-100 border-secondary bg-light">
           <a :href="meme.imageUrl" target="_blank" rel="noopener noreferrer">
             <img
               :src="meme.imageUrl"
               class="card-img-top"
-              :alt="meme.imageUrl"
+              :alt="meme.keywords[0]"
             />
           </a>
-          <div class="card-tile">
+          <div class="card-body">
             <h4>
               <span
                 v-for="(keyword, index) of meme.keywords"
                 :key="index"
-                class="badge bg-secondary m-2"
+                class="badge bg-secondary m-1"
               >
                 {{ keyword }}
               </span>
             </h4>
           </div>
+          <div class="card-footer">{{ meme.imageUrl }}</div>
         </div>
       </div>
     </div>
