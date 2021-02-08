@@ -41,7 +41,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   setup() {
     const { result, loading } = useQuery(gql`
-      query getUsers {
+      query getMemes {
         Memes {
           id
           imageUrl
