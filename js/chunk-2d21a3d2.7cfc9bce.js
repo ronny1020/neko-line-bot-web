@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d21a3d2"],{bb51:function(e,n,t){"use strict";t.r(n);var c=t("7a23");const o={class:"container"},a=Object(c["createElementVNode"])("div",null,"Welcome to Line Bot Web",-1),r=[a];function b(e,n){return Object(c["r"])(),Object(c["createElementBlock"])("div",o,r)}var d=t("b9a6"),i=t.n(d);const s={},l=i()(s,[["render",b]]);n["default"]=l}}]);
+//# sourceMappingURL=chunk-2d21a3d2.7cfc9bce.js.map
